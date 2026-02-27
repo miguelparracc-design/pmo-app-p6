@@ -6,6 +6,7 @@ st.set_page_config(
     page_title="PMO Control - Miguel Parra",
     page_icon="logo.png",
     layout="wide"
+)
 
     from PIL import Image
 
@@ -632,3 +633,4 @@ st.divider()
 with st.expander("🔎 Vista previa merge filtrado"):
 
     st.dataframe(dff.head(200), use_container_width=True)
+
