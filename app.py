@@ -4,7 +4,7 @@ import plotly.express as px
 
 st.set_page_config(
     page_title="PMO Control - Miguel Parra",
-    page_icon="logo.png",
+    page_icon="Logo.png",
     layout="wide"
 )
 
@@ -633,5 +633,6 @@ st.divider()
 with st.expander("🔎 Vista previa merge filtrado"):
 
     st.dataframe(dff.head(200), use_container_width=True)
+
 
 
