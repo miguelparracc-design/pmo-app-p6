@@ -10,7 +10,7 @@ st.set_page_config(
 
 from PIL import Image
 
-logo = Image.open("logo.png")
+logo = Image.open("Logo.png")
 
 col1, col2 = st.columns([1,4])
 with col1:
@@ -633,6 +633,7 @@ st.divider()
 with st.expander("🔎 Vista previa merge filtrado"):
 
     st.dataframe(dff.head(200), use_container_width=True)
+
 
 
 
