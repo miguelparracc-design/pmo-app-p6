@@ -2,7 +2,21 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-st.set_page_config(page_title="PMO Dashboard P6 (HH)", layout="wide")
+st.set_page_config(
+    page_title="PMO Control - Miguel Parra",
+    page_icon="logo.png",
+    layout="wide"
+
+    from PIL import Image
+
+logo = Image.open("logo.png")
+
+col1, col2 = st.columns([1,4])
+with col1:
+    st.image(logo, width=90)
+with col2:
+    st.markdown("## PMO Control")
+    st.caption("Miguel Parra · Versión de prueba")
 
 # =========================
 # CONFIG / HOMOLOGACIÓN
@@ -616,4 +630,5 @@ with right2:
 st.divider()
 
 with st.expander("🔎 Vista previa merge filtrado"):
+
     st.dataframe(dff.head(200), use_container_width=True)
