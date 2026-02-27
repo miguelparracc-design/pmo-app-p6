@@ -8,7 +8,7 @@ st.set_page_config(
     layout="wide"
 )
 
-    from PIL import Image
+from PIL import Image
 
 logo = Image.open("logo.png")
 
@@ -633,4 +633,5 @@ st.divider()
 with st.expander("🔎 Vista previa merge filtrado"):
 
     st.dataframe(dff.head(200), use_container_width=True)
+
 
